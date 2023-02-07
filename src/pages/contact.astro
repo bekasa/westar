@@ -1,0 +1,29 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+<SiteLayout title="Contact Westar Swimming Pool Construction"
+ desc="Westar Pools, pool construction, accompany your pool with an outside bar / chiringuito area, mood lighting, fireplace, jacuzzi or underwater lighting">
+ 
+ <h2>WestarPools &#8211; Swimming Pool Costruction</h2>
+<p>To contact us by email please use the form below.</p>
+<div class="format ld:format-lg ld:w-3/4 mx-auto">
+<form action="/thankyou" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <div class="invisible"><input name="bot-field" /></div>
+        <div class="m-2 p-4">
+        <div><label for="name">Name<span class="text-red-700">*</span></label></div>
+        <input type="text" name="name" id="name" required minlength="4" maxlength="100">
+        </div>
+        <div class="m-2 p-4">
+        <div><label for="email">Email<span class="text-red-700">*</span></label></div>
+        <input type="email" name="email" id="email" required >
+        </div>
+        <div class="m-2 p-4">
+        <div><label for="message">Message<span class="text-red-700">*</span></label></div>
+        <textarea name="message" cols="30" rows="6" minlength="4" required></textarea>
+        </div>
+        <div>
+        <button class="rounded bg-blue-700 px-4 py-2 m-2 text-white"type="submit">Send</button>
+        </div>
+    </form>
+</div>
+</SiteLayout>
